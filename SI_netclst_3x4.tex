@@ -1,0 +1,106 @@
+
+%\documentclass[crop=true,border=0,convert={density=600}]{standalone}
+\documentclass[margin={-0.5cm 0cm 0cm 0cm}]{standalone}
+
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{overpic}
+\usepackage{tgheros}
+\usepackage[export]{adjustbox}
+\usepackage{calc}
+
+\renewcommand*{\familydefault}{\sfdefault}
+
+\makeatletter 
+\newcommand\Largeplus{\@setfontsize\semiHuge{16.72}{21.38}}
+\makeatother
+
+\begin{document}
+
+\def\xin{2.75}
+\def\yin{79.5}
+\def\xlin{50}
+\def\ylin{100}
+
+\def\w{2.6in}
+
+\large \bfseries
+
+\begin{tabular}{@{}l@{}}
+
+  \smallskip
+  
+  \\
+  
+  \begin{overpic}[width=\w]%
+    % 110, 133
+    {/home/fh/sci/lab/aniso_netw/ploscb_18/fig/si/figSI_nclst_3aniso.pdf}
+    \put(\xin,\yin){A}
+  \end{overpic}
+
+  \begin{overpic}[width=\w]%
+    {/home/fh/sci/lab/aniso_netw/ploscb_18/fig/si/figSI_nclst_6aniso.pdf}
+    \put(\xin,\yin){B}
+  \end{overpic}
+
+  \begin{overpic}[width=\w]%
+    {/home/fh/sci/lab/aniso_netw/ploscb_18/fig/si/figSI_nclst_8aniso.pdf}
+    \put(\xin,\yin){C}
+  \end{overpic}
+  
+  \begin{overpic}[width=\w]%
+    {/home/fh/sci/lab/aniso_netw/ploscb_18/fig/si/figSI_nclst_12aniso.pdf}
+    \put(\xin,\yin){D}
+  \end{overpic}
+
+  \\
+
+  \begin{overpic}[width=\w]{%
+      /home/fh/sci/lab/aniso_netw/ploscb_18/fig/si/figSI_nclst_3dist.pdf}
+    \put(\xin,\yin){\fboxsep=3pt\colorbox{white}{E}}
+  \end{overpic}
+
+  \begin{overpic}[width=\w]{%
+      /home/fh/sci/lab/aniso_netw/ploscb_18/fig/si/figSI_nclst_6dist.pdf}
+    \put(\xin,\yin){F}
+  \end{overpic}
+
+  \begin{overpic}[width=\w]%
+    {/home/fh/sci/lab/aniso_netw/ploscb_18/fig/si/figSI_nclst_8dist.pdf}
+    \put(\xin,\yin){G}
+  \end{overpic}
+  
+  \begin{overpic}[width=\w]%
+    {/home/fh/sci/lab/aniso_netw/ploscb_18/fig/si/figSI_nclst_12dist.pdf}
+    \put(\xin,\yin){H}
+  \end{overpic}
+
+  \\
+
+  \begin{overpic}[width=\w]{%
+      /home/fh/sci/lab/aniso_netw/ploscb_18/fig/si/figSI_nclst_3tuned.pdf}
+    \put(\xin,\yin){\fboxsep=3pt\colorbox{white}{I}}
+  \end{overpic}
+
+  \begin{overpic}[width=\w]{%
+      /home/fh/sci/lab/aniso_netw/ploscb_18/fig/si/figSI_nclst_6tuned.pdf}
+    \put(\xin,\yin){J}
+  \end{overpic}
+
+  \begin{overpic}[width=\w]%
+    {/home/fh/sci/lab/aniso_netw/ploscb_18/fig/si/figSI_nclst_8tuned.pdf}
+    \put(\xin,\yin){K}
+  \end{overpic}
+  
+  \begin{overpic}[width=\w]%
+    {/home/fh/sci/lab/aniso_netw/ploscb_18/fig/si/figSI_nclst_12tuned.pdf}
+    \put(\xin,\yin){L}
+  \end{overpic}
+
+   
+\end{tabular}	
+
+
+\end{document}
+
+
